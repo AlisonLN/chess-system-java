@@ -45,7 +45,6 @@ public class ChessMatch {
         return capturedPiece;
     }
     private void validateSourcePosition(Position position) {
-        System.out.println("Validating source position: " + position);
         if (!board.thereIsAPiece(position)) {
             throw new ChessException("There is no piece on source position");
         }
